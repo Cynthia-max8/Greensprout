@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Logo and Nav */
+    .top-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 20px;
+      background: #4CAF50;
+      color: white;
+    }
+
+    .top-bar img {
+      height: 80px;
+    }
+
+    nav a {
+      color: white;
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .top-bar{
+      position:sticky;
+      top:0;
+      z-index: 1000;
+    }
+    /* About Us */
+    .about {
+      padding: 30px 20px;
+      background: #fffde7;
+      text-align: center;
+    }
+
+    .about h2 {
+      margin-bottom: 10px;
+    }
+
+    .about p {
+      max-width: 600px;
+      margin: auto;
+    }
+
+    /* Contact */
+    .contact {
+      padding: 30px 20px;
+      background: #f1f1f1;
+      text-align: center;
+    }
+
+    .contact h2 {
+      margin-bottom: 10px;
+    }
+
+    .contact p {
+      margin: 5px 0;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 15px;
+      background: #4CAF50;
+      color: white;
+    }
+    footer img{
+      width: 20px;
+      height: 20px;
+      margin: 0 6px;
+      vertical-align: middle;
+      opacity: 0.8;
+      transition: transform 0.3s;
+    }
+    footer img:hover {
+      transform: scale(1.1);
+      opacity: 1;
+    }
+
+    @media (max-width: 600px) {
+      .program-list {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+    </style>
+</head>
+<body>
+
+   <!-- Logo & Navigation -->
+  <div class="top-bar">
+    <img src="images/logo.jpg" alt="Green Sprout Logo">
+    <nav>
+      <a href="home.html">Home</a>
+      <a href="contact.html">Contact</a>
+      <a href="Gallery.html">Gallery</a>
+      <a href="program.html">Programs</a>
+      
+    </nav>
+  </div>
+  
+
+   <section id="contact" style="padding: 40px; background-color: #f4f4f4;">
+  <h2 style="text-align: center; font-size: 2rem;">Contact Us</h2>
+  
+  <div style="max-width: 500px; margin: auto; background: white; padding: 20px; border-radius: 8px;">
+    <p><strong>Green Sprout School</strong></p>
+    <p><strong>Address:</strong> Kahawa West, Nairobi</p>
+    <p><strong>Phone:</strong> <a href="tel:+254712345678">+254 712 345 678</a></p>
+    <p><strong>Email:</strong> greensproutschool@gmail.com</p>
+    
+    <hr>
+
+    <h3>Send us a message on WhatsApp:</h3>
+    <a href="https://wa.me/254712345678?text=Hello%20Green%20Sprout%2C%20I%20would%20like%20to%20know%20more%20about%20your%20programs."
+       target="_blank"
+       style="display: inline-block; background-color: #25D366; color: white;
+              padding: 12px 20px; text-decoration: none; border-radius: 6px;
+              font-weight: bold; margin-top: 10px;">
+      📲 Message Us on WhatsApp
+    </a>
+  </div>
+</section>
+<footer>
+    <p>&copy; 2025 Green Sprout Learning. All rights reserved.</p>
+    <div>
+      <a href="https://www.instagram.com/greensproutkindergarten?igsh=MWZnN2Mwc3U5cTZxaA==" target="_blank">
+        <img src="images/Ig.jpeg" alt="Instagram">
+      </a>
+      <a href="https://www.facebook.com/greensproutschool23/" target="_blank">
+        <img src="images/download.png" alt="Facebook">
+      </a>
+      <a href="https://vm.tiktok.com/ZMSTHpFgh/" target="_blank">
+        <img src="images/tiktok.png" alt="TikTok">
+      </a>
+    </div>
+  </footer>
+</body>
+</html>

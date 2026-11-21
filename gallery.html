@@ -1,0 +1,179 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Logo and Nav */
+    .top-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 20px;
+      background: #4CAF50;
+      color: white;
+    }
+
+    .top-bar img {
+      height: 80px;
+    }
+
+    nav a {
+      color: white;
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .top-bar{
+      position:sticky;
+      top:0;
+      z-index: 1000;
+    }
+    /* About Us */
+    .about {
+      padding: 30px 20px;
+      background: #fffde7;
+      text-align: center;
+    }
+
+    .about h2 {
+      margin-bottom: 10px;
+    }
+
+    .about p {
+      max-width: 600px;
+      margin: auto;
+    }
+
+    /* Contact */
+    .contact {
+      padding: 30px 20px;
+      background: #f1f1f1;
+      text-align: center;
+    }
+
+    .contact h2 {
+      margin-bottom: 10px;
+    }
+
+    .contact p {
+      margin: 5px 0;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 15px;
+      background: #4CAF50;
+      color: white;
+    }
+    footer img{
+      width: 20px;
+      height: 20px;
+      margin: 0 6px;
+      vertical-align: middle;
+      opacity: 0.8;
+      transition: transform 0.3s;
+    }
+    footer img:hover {
+      transform: scale(1.1);
+      opacity: 1;
+    }
+
+    @media (max-width: 600px) {
+      .program-list {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+    </style>
+</head>
+<body>
+
+   <!-- Logo & Navigation -->
+  <div class="top-bar">
+    <img src="images/logo.jpg" alt="Green Sprout Logo">
+    <nav>
+      <a href="home.html">Home</a>
+      <a href="contact.html">Contact</a>
+      <a href="Gallery.html">Gallery</a>
+      <a href="program.html">Programs</a>
+      
+    </nav>
+  </div>
+  <section id="gallery" style="padding: 50px 20px; background-color: #f8f9fa;">
+  <h2 style="text-align: center; color: #2e7d32;">📸 Our Gallery</h2>
+  <p style="text-align: center; max-width: 800px; margin: auto;">
+    A glimpse into our daily activities — from joyful learning to graceful ballet and outdoor fun!
+  </p>
+
+  <!-- Ballet Section -->
+  <h3 style="color: #2e7d32; margin-top: 30px;">🎀 Boot camp</h3>
+  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 15px; margin-top: 10px;">
+    <img src="images/ballet.jpg" alt="Ballet dance" style="width: 100%; border-radius: 10px;"height="180px">
+    <img src="images/coding.jpg" alt="Ballet moves" style="width: 100%; border-radius: 10px;"height="180px">
+    <img src="images/bootcap.jpg" alt="Ballet performance" style="width: 100%; border-radius: 10px;"height="180px">
+  </div>
+
+  <!-- Classroom Activities -->
+  <h3 style="color: #2e7d32; margin-top: 40px;">📚 Classroom Activities</h3>
+  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 15px; margin-top: 10px;">
+    <img src="images/children inside.jpg" alt="Reading time" style="width: 100%; border-radius: 10px;" height="180px">
+    <img src="images/children outside.jpg" alt="Art session" style="width: 100%; border-radius: 10px;"height="180px">
+    <img src="images/learning.jpg" alt="Group learning" style="width: 100%; border-radius: 10px;"height="180px">
+  </div>
+
+  <!-- Outdoor Play -->
+  <h3 style="color: #2e7d32; margin-top: 40px;">🌳 Outdoor Play</h3>
+  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 15px; margin-top: 10px;">
+    <img src="images/outdoor.jpg" alt="Slide time" style="width: 100%; border-radius: 10px;"height="180px">
+    <img src="images/out door2.jpg" alt="Running outdoors" style="width: 100%; border-radius: 10px;"height="180px">
+    <img src="images/out3.jpg" alt="Group games" style="width: 100%; border-radius: 10px;"height="180px">
+  </div>
+
+
+</section>
+<section id="video-highlights" style="padding: 50px 20px; background-color: #f9fbe7;">
+  <h2 style="text-align: center; color: #33691e;">🎬 Moments from Green Sprout</h2>
+  <p style="text-align: center; max-width: 700px; margin: auto;">
+    A sneak peek into our vibrant day—from class time to fun outdoor activities.
+  </p>
+
+  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px; margin-top: 30px;">
+    
+    <!-- First Video -->
+    <video controls style="width: 100%; border-radius: 15px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); "height="180px">
+      <source src="video/Download (1).mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+
+    <!-- Second Video -->
+    <video controls style="width: 100%; border-radius: 15px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); "height="180px">
+      <source src="video/Download.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+
+  </div>
+</section>
+<footer>
+    <p>&copy; 2025 Green Sprout Learning. All rights reserved.</p>
+    <div>
+      <a href="https://www.instagram.com/greensproutkindergarten?igsh=MWZnN2Mwc3U5cTZxaA==" target="_blank">
+        <img src="images/Ig.jpeg" alt="Instagram">
+      </a>
+      <a href="https://www.facebook.com/greensproutschool23/" target="_blank">
+        <img src="images/download.png" alt="Facebook">
+      </a>
+      <a href="https://vm.tiktok.com/ZMSTHpFgh/" target="_blank">
+        <img src="images/tiktok.png" alt="TikTok">
+      </a>
+    </div>
+  </footer>
+  </body>
+</html>

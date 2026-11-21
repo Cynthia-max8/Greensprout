@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Green Sprout School</title>
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <script src="js/bootstrap.js"></script>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to bottom right,#e0f7fa, #f1f8e9 );
+      color: #333;
+    }
+
+    /* Logo and Nav */
+    .top-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 20px;
+      background: #4CAF50;
+      color: white;
+    }
+
+    .top-bar img {
+      height: 80px;
+    }
+
+    nav a {
+      color: white;
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .top-bar{
+      position:sticky;
+      top:0;
+      z-index: 1000;
+    }
+
+    /* Marquee */
+    marquee {
+      background: #bbf8bd;
+      color: #88630e;
+      padding: 10px;
+      font-weight: bold;
+    }
+
+    /* Carousel */
+    .carousel {
+      position: relative;
+      padding: 60px 20px;
+      background: url('school.jpg') center/cover no-repeat;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-align: center;
+      margin-bottom: 20px;
+      margin-top: 30px;
+    }
+
+    .carousel h1 {
+      font-size: 28px;
+      background-color: rgba(0, 0, 0, 0.6);
+      display:inline-block;
+      padding: 15px 20px;
+      border-radius: 8px;
+    }
+
+    /* Programs */
+    .programs {
+      background: #e8f5e9;
+      padding: 30px 20px;
+      text-align: center;
+    }
+
+    .programs h2 {
+      margin-bottom: 20px;
+    }
+
+    .program-list {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+
+    .program {
+      background: white;
+      padding: 20px;
+      margin: 10px;
+      width: 250px;
+      border-radius: 10px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    }
+
+    /* About Us */
+    .about {
+      padding: 30px 20px;
+      background: #fffde7;
+      text-align: center;
+    }
+
+    .about h2 {
+      margin-bottom: 10px;
+    }
+
+    .about p {
+      max-width: 600px;
+      margin: auto;
+    }
+
+    /* Contact */
+    .contact {
+      padding: 30px 20px;
+      background: #f1f1f1;
+      text-align: center;
+    }
+
+    .contact h2 {
+      margin-bottom: 10px;
+    }
+
+    .contact p {
+      margin: 5px 0;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 15px;
+      background: #4CAF50;
+      color: white;
+    }
+    footer img{
+      width: 20px;
+      height: 20px;
+      margin: 0 6px;
+      vertical-align: middle;
+      opacity: 0.8;
+      transition: transform 0.3s;
+    }
+    footer img:hover {
+      transform: scale(1.1);
+      opacity: 1;
+    }
+
+    @media (max-width: 600px) {
+      .program-list {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Logo & Navigation -->
+  <div class="top-bar">
+    <img src="images/logo.jpg" alt="Green Sprout Logo">
+    <nav>
+      <a href="home.html">Home</a>
+      <a href="contact.html">Contact</a>
+      <a href="Gallery.html">Gallery</a>
+      <a href="program.html">Programs</a>
+      
+    </nav>
+  </div>
+  <section id="program-video" style="padding: 30px 20px; background-color: #f1f8e9;">
+  <h2 style="text-align: center; color: #2e7d32;">🎥 Inside Our Programs</h2>
+  <p style="text-align: center; max-width: 700px; margin: auto;">
+    Watch how our children explore, discover, and blossom through daily learning and play.
+  </p>
+
+  <div style="margin-top: 20px; display: flex; justify-content: center;">
+    <video controls style="max-width: 100%; width: 700px; border-radius: 12px;">
+      <source src="video/AQM6c28hRoAhMtyXDvGmvul4njLC93VFUiRFGEwDqkayC6ffc50EOXeqAK9Fp7W1q1B_xCIKzlDJBR_snSpfop-- - Shortcut.lnk" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+</section>
+
+  <section id="programs" class="py-8 bg-gray-100 text-gray-800">
+  <div class="max-w-4xl mx-auto px-4">
+    <h2 class="text-3xl font-bold mb-4 text-green-700">Our Programs</h2>
+
+    <h3 class="text-xl font-semibold mt-4">Academic Programs</h3>
+    <ul class="list-disc ml-6 mt-2">
+      <li>Playgroup</li>
+      <li>PP1 & PP2 Curriculum</li>
+      <li>Exams, Exercise Books & Stationery</li>
+    </ul>
+
+    <h3 class="text-xl font-semibold mt-6">Daycare Activities</h3>
+    <ul class="list-disc ml-6 mt-2">
+      <li>Potty Training</li>
+      <li>Language Development</li>
+      <li>Playing and Singing</li>
+      <li>Storytelling and Painting</li>
+    </ul>
+
+    <h3 class="text-xl font-semibold mt-6">Co-curricular Activities</h3>
+    <ul class="list-disc ml-6 mt-2">
+      <li>Music (Guitar, Piano)</li>
+      <li>Ballet</li>
+      <li>Skating</li>
+      <li>Swimming</li>
+      <li>Abacus (PP2 only)</li>
+    </ul>
+
+    <p class="mt-4">
+      <strong>Bonus:</strong> Coding lessons available on Saturdays for children aged 7–13 years.
+    </p>
+  </div>
+</section>
+<footer>
+    <p>&copy; 2025 Green Sprout Learning. All rights reserved.</p>
+    <div>
+      <a href="https://www.instagram.com/greensproutkindergarten?igsh=MWZnN2Mwc3U5cTZxaA==" target="_blank">
+        <img src="images/Ig.jpeg" alt="Instagram">
+      </a>
+      <a href="https://www.facebook.com/greensproutschool23/" target="_blank">
+        <img src="images/download.png" alt="Facebook">
+      </a>
+      <a href="https://vm.tiktok.com/ZMSTHpFgh/" target="_blank">
+        <img src="images/tiktok.png" alt="TikTok">
+      </a>
+    </div>
+  </footer>
+
+</body>
+</html>
